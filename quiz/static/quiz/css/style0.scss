@@ -1,0 +1,48 @@
+
+
+$primary-green: #137a23;
+$primary-blue: #3e737d;
+$early-blue: #e9eff0;
+$middle-blue: #7ea0a6;
+$gray0: #E8E8E8;
+$gray1: lightgray;
+$gray2: darkgray;
+$gray3: gray;
+$gray4: #686868;
+$gray5: #505050;
+$off-black-1: #2b2a33;
+$off-black-2: #00131b;
+$blue-black: #074750;
+$blue-black-dark: #001e26;
+
+//plain_footer.html - duplicate of code in lesson css
+
+#plain-footer {
+    padding: 10px;
+    background-color: $primary-blue;
+    text-align: center;
+}
+
+#footer-email-link {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-email-link:hover {
+    color: black;
+}
+
+#terms-row {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+#terms-row a {
+    color: white;
+    text-decoration: none;
+}
+
+#content-container {
+    width: 100%;
+    min-height: 100vh;
+}

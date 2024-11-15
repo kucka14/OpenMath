@@ -1,0 +1,17 @@
+<div class="modal fade" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-box">
+            <form method="post" class="standard-form">
+                <div class="modal-line">
+                    <input type="hidden" name="type" value="delete_resource">
+                    <input type="hidden" id="dhiddenrid" name="dhiddenrid">
+                    <div>Are you sure?</div>
+                    <div>
+                        <input type="submit" value="Yes" name="delete_submit">
+                        <button id="resource-delete-dismiss" type="button" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

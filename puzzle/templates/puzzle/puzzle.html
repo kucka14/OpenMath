@@ -1,0 +1,70 @@
+{% extends "puzzle_base.html" %}
+{% block body %}
+
+<div id="full-container">
+
+    <div id="main-header">
+        <div id="main-header-top" class="switch-show">
+            <a href="/" target="_blank">
+                <div id="login-mark" style="display: inline-block; margin-bottom: 5px;">OpenMath.US</div>
+                <img style="margin-right: 3px; margin-bottom: 6px;" src="/static/puzzle/images/parsley_logo.png" height="25px">
+            </a>
+            <div style="margin-left: 8px; margin-right: 10px; padding-bottom: 5px;"><strong>Question Collection</strong></div>
+        {% if logged_in %}
+            <button style="margin-bottom: 5px;" id="add-resource-button" type="button" data-bs-toggle="modal" data-bs-target="#add-resource-modal">Add Resource</button>
+            <button style="margin-bottom: 5px;" id="review-submission-button" type="button" data-bs-toggle="modal" data-bs-target="#review-submission-modal">Review Submissions</button>
+        {% else %}
+            <button class="btn btn-sm btn-outline-secondary standard-outline-button" style="margin-bottom: 5px;" id="submit-resource-button" type="button" data-bs-toggle="modal" data-bs-target="#add-resource-modal">Submit Resource</button>
+        {% endif %}
+        </div>
+        <div style="font-style: italic;" class="switch-show">
+            Double-click a resource to view.
+        </div>
+    </div>
+
+    <div id="content-container">
+        <div style="margin-top: 50px; width: 90%; max-width: 300px; margin-left: auto; margin-right: auto;">
+            <div style="margin-bottom: 5px; margin-left: auto; margin-right: auto; text-align: center;">
+                Loading {{ resource_count }} resources...
+            </div>
+            <div class="progress">
+                <div id="loading-bar" class="progress-bar" role="progressbar" style="background-color: #137a23; width: 0%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="plain-footer">
+        <div>
+        © 2022 openmath.us | <a id="footer-email-link" href="mailto:openmath.us@gmail.com">openmath.us@gmail.com</a>
+        </div>
+        <div id="terms-row">
+            <a href="/terms_conditions" target="_blank">Terms and Conditions</a> | <a href="/privacy_policy" target="_blank" >Privacy Policy</a> | <a href="/cookies_policy" target="_blank">Cookies Policy</a>
+        </div>
+    </div>
+
+</div>
+
+<div id="scroll-up-button-div" style="display: none;">
+    <div>Double-click a resource to view.</div>
+    <div><a id="scroll-up-button" href="#">Scroll To Top</a></div>
+</div>
+<div id="scroll-down-indicator" style="display: none; z-index: 2;">Scroll Down For More Resources</div>
+
+{% include 'puzzle/modals/login_modal.html' %}
+
+<section id="lower-container"></section>
+
+{% include 'puzzle/modals/logout_modal.html' %}
+
+{% include 'puzzle/modals/delete_resource_modal.html' %}
+
+{% include 'puzzle/modals/add_resource_modal.html' %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="/static/puzzle/js/set_html.js"></script>
+<script src="/static/puzzle/js/index.js"></script>
+
+{% endblock %}

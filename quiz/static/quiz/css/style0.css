@@ -1,0 +1,31 @@
+#plain-footer {
+  padding: 10px;
+  background-color: #3e737d;
+  text-align: center;
+}
+
+#footer-email-link {
+  text-decoration: none;
+  color: black;
+}
+
+#footer-email-link:hover {
+  color: black;
+}
+
+#terms-row {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+#terms-row a {
+  color: white;
+  text-decoration: none;
+}
+
+#content-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style0.css.map */

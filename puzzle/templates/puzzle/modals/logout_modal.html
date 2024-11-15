@@ -1,0 +1,21 @@
+<button style="display: none;" id="logout-button" type="button" data-bs-toggle="modal" data-bs-target="#logout-modal"></button>
+
+<div class="modal fade" id="logout-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-box">
+            <form method="post" class="standard-form">
+                <div class="modal-line">
+                    <div>Are you sure?</div>
+                    <div>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="type" value="logout">
+                            <input type="submit" value="Yes" name="logout_submit">
+                            <button type="button" data-bs-dismiss="modal">No</button>
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

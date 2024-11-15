@@ -1,0 +1,88 @@
+
+<div id="home-container">
+
+    <div id="home-nav-box">
+    </div>
+
+    <div id="home-top-cover-left"></div>
+    <div id="home-top-cover-right"></div>
+
+    <div id="home-top">
+
+        <div id="sequence-container">
+
+            <div id="tables-container">
+                <div id="big-table-container">
+                    <table>
+                        <tr dataY="4" class="big-table-row"></tr>
+                        <tr dataY="3" class="big-table-row"></tr>
+                        <tr dataY="2" class="big-table-row"></tr>
+                        <tr dataY="1" class="big-table-row"></tr>
+                        <tr dataY="0" class="big-table-row"></tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr dataY="9" class="small-table-row"></tr>
+                        <tr dataY="8" class="small-table-row"></tr>
+                        <tr dataY="7" class="small-table-row"></tr>
+                        <tr dataY="6" class="small-table-row"></tr>
+                        <tr dataY="5" class="small-table-row"></tr>
+                        <tr dataY="4" class="small-table-row"></tr>
+                        <tr dataY="3" class="small-table-row"></tr>
+                        <tr dataY="2" class="small-table-row"></tr>
+                        <tr dataY="1" class="small-table-row"></tr>
+                        <tr dataY="0" class="small-table-row"></tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="home-top-alt">
+        Use a larger screen for the best experience, and to access all content.
+    </div>
+
+    <div id="home-bottom">
+        <div id="home-bottom-left">
+            <div id="home-bottom-left-text">
+                <div style="margin-bottom: 15px;">
+                    Select a lesson above to get started.
+                </div>
+                <div>
+                    {% if usertype == 't' %}
+                    Learner accounts must complete the lessons in sequence.<br>
+                    Teacher accounts can access all the lessons right away.
+                    {% else %}
+                    As you complete lessons, more lessons will become available.
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div id="home-bottom-right">
+            <div id="home-bottom-right-inner" style="opacity: 1;">
+                {% include 'lesson/svg_images/golden_ratio_spiral.html' %}
+            </div>
+            <div id="home-bottom-right-inner-cover" style="opacity: 0;">
+                OpenMath.US
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{ progress_dict|json_script:"progress_dict" }}
+{{ override_list|json_script:"override_list" }}
+{{ cased_username|json_script:"cased_username" }}
+{{ user_id|json_script:"user_id" }}
+{{ is_new_user|json_script:"is_new_user" }}
+{{ usertype|json_script:"usertype" }}
+{{ enrolled_dict|json_script:"enrolled_dict" }}
+{{ display_name|json_script:"display_name" }}
+{{ picture_password|json_script:"picture_password" }}
+{{ om_is_dev_env|json_script:"om_is_dev_env" }}
+
+<script src="/static/lesson/js/lesson_dict.js"></script>
+<script src="/static/lesson/js/home.js"></script>

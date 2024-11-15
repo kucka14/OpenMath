@@ -1,0 +1,37 @@
+
+<div class="change-userpass-box">
+    <div style="font-size: 20px; margin-bottom: 10px;">
+        Change Username
+    </div>
+    <div>
+        <form id="change-username-form" method="post">
+            {% csrf_token %}
+            <div class="val-error-div">{{ change_username_form.non_field_errors.as_text }}</div>
+            {{ change_username_form.oldusername }}
+            <div class="val-error-div">{{ change_username_form.oldusername.errors.as_text }}</div>
+            <div class="change-userpass-item">
+                <div class="change-userpass-subtitle">
+                    Password
+                </div>
+                <div>
+                    {{ change_username_form.password }}
+                </div>
+                <div class="val-error-div">{{ change_username_form.password.errors.as_text }}</div>
+            </div>
+            <div class="change-userpass-item">
+                <div class="change-userpass-subtitle">
+                    New Username
+                </div>
+                <div>
+                    {{ change_username_form.newusername }}
+                </div>
+                <div class="val-error-div">{{ change_username_form.newusername.errors.as_text }}</div>
+            </div>
+            <div>
+                <input type="submit" value="Change Username">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/static/lesson/js/ts_settings.js"></script>

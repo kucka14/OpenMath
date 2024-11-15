@@ -1,0 +1,68 @@
+<div id="general-settings-holder">
+    <div id="general-settings-container">
+
+        <div id="general-settings-title">Settings</div>
+
+        <div class="general-settings-line">
+            Username: <span class="username-section">{{ cased_username }}</span>
+        </div>
+
+        <div class="general-settings-line">
+            {% include 'lesson/chunks/ts_settings_name.html' %}
+        </div>
+
+        {% include 'lesson/chunks/ts_settings_username.html' %}
+
+        <div class="horizontal-line"></div>
+
+    </div>
+
+    <div id="picpass-practice-region">
+        <div id="picpass-practice-triggerline">
+            <div>Password:</div>
+            <div id="picpass-border">
+                <a id="picpass-pass" href="#">
+                    {{ picture_password }}
+                </a>
+            </div>
+            <div style="margin-bottom: 3px;">
+                <button class="btn btn-primary btn-sm standard-button" id="picpass-practice">
+                    Practice Password
+                </button>
+            </div>
+        </div>
+
+        <div style="display: none;" id="picpass-instructions">Click your password to hide. Click again to show.</div>
+
+        <div id="picpass-practice-panel" style="display: none;">
+            {% include 'lesson/chunks/picpass.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- s12 welcome modal -->
+<button style="display: none;" id="s12-welcome-modal-trigger" data-bs-toggle="modal" data-bs-target="#s12-welcome-modal"></button>
+<div class="modal fade" id="s12-welcome-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>Welcome to OpenMath.US!</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    You have been given an 8-digit password: <strong id="s12-welcome-password"></strong>. Write it down now and keep it in a safe place. You will use your username, <strong>{{ cased_username }}</strong>, and your password to sign in.
+                </div>
+                <div>
+                    Under Settings (where you are now), click on practice password to practice your password using pictures.
+                </div>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button type="button" class="btn btn-primary standard-button" data-bs-dismiss="modal">Dismiss</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/lesson/js/picpass.js"></script>
+<script src="/static/lesson/js/s12_settings.js"></script>

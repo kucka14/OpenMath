@@ -1,0 +1,54 @@
+﻿CCSS.Math.Content.HSN.RN.A.1
+Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents to those values, allowing for a notation for radicals in terms of rational exponents. For example, we define 51/3 to be the cube root of 5 because we want (51/3)3 = 5(1/3)3 to hold, so (51/3)3 must equal 5.
+CCSS.Math.Content.HSN.RN.A.2
+Rewrite expressions involving radicals and rational exponents using the properties of exponents.
+CCSS.Math.Content.HSN.RN.B.3
+Explain why the sum or product of two rational numbers is rational; that the sum of a rational number and an irrational number is irrational; and that the product of a nonzero rational number and an irrational number is irrational.
+CCSS.Math.Content.HSN.Q.A.1
+Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.
+CCSS.Math.Content.HSN.Q.A.2
+Define appropriate quantities for the purpose of descriptive modeling.
+CCSS.Math.Content.HSN.Q.A.3
+Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.
+CCSS.Math.Content.HSN.CN.A.1
+Know there is a complex number i such that i2 = -1, and every complex number has the form a + bi with a and b real.
+CCSS.Math.Content.HSN.CN.A.2
+Use the relation i2 = -1 and the commutative, associative, and distributive properties to add, subtract, and multiply complex numbers.
+CCSS.Math.Content.HSN.CN.A.3
+(+) Find the conjugate of a complex number; use conjugates to find moduli and quotients of complex numbers.
+CCSS.Math.Content.HSN.CN.B.4
+(+) Represent complex numbers on the complex plane in rectangular and polar form (including real and imaginary numbers), and explain why the rectangular and polar forms of a given complex number represent the same number.
+CCSS.Math.Content.HSN.CN.B.5
+(+) Represent addition, subtraction, multiplication, and conjugation of complex numbers geometrically on the complex plane; use properties of this representation for computation. For example, (-1 + √3 i)3 = 8 because (-1 + √3 i) has modulus 2 and argument 120°.
+CCSS.Math.Content.HSN.CN.B.6
+(+) Calculate the distance between numbers in the complex plane as the modulus of the difference, and the midpoint of a segment as the average of the numbers at its endpoints.
+CCSS.Math.Content.HSN.CN.C.7
+Solve quadratic equations with real coefficients that have complex solutions.
+CCSS.Math.Content.HSN.CN.C.8
+(+) Extend polynomial identities to the complex numbers. For example, rewrite x2 + 4 as (x + 2i)(x - 2i).
+CCSS.Math.Content.HSN.CN.C.9
+(+) Know the Fundamental Theorem of Algebra; show that it is true for quadratic polynomials.
+CCSS.Math.Content.HSN.VM.A.1
+(+) Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments, and use appropriate symbols for vectors and their magnitudes (e.g., v, |v|, ||v||, v).
+CCSS.Math.Content.HSN.VM.A.2
+(+) Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point.
+CCSS.Math.Content.HSN.VM.A.3
+(+) Solve problems involving velocity and other quantities that can be represented by vectors.
+CCSS.Math.Content.HSN.VM.B.4
+(+) Add and subtract vectors.
+CCSS.Math.Content.HSN.VM.B.5
+(+) Multiply a vector by a scalar.
+CCSS.Math.Content.HSN.VM.C.6
+(+) Use matrices to represent and manipulate data, e.g., to represent payoffs or incidence relationships in a network.
+CCSS.Math.Content.HSN.VM.C.7
+(+) Multiply matrices by scalars to produce new matrices, e.g., as when all of the payoffs in a game are doubled.
+CCSS.Math.Content.HSN.VM.C.8
+(+) Add, subtract, and multiply matrices of appropriate dimensions.
+CCSS.Math.Content.HSN.VM.C.9
+(+) Understand that, unlike multiplication of numbers, matrix multiplication for square matrices is not a commutative operation, but still satisfies the associative and distributive properties.
+CCSS.Math.Content.HSN.VM.C.10
+(+) Understand that the zero and identity matrices play a role in matrix addition and multiplication similar to the role of 0 and 1 in the real numbers. The determinant of a square matrix is nonzero if and only if the matrix has a multiplicative inverse.
+CCSS.Math.Content.HSN.VM.C.11
+(+) Multiply a vector (regarded as a matrix with one column) by a matrix of suitable dimensions to produce another vector. Work with matrices as transformations of vectors.
+CCSS.Math.Content.HSN.VM.C.12
+(+) Work with 2 × 2 matrices as a transformations of the plane, and interpret the absolute value of the determinant in terms of area.

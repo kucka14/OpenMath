@@ -1,0 +1,106 @@
+
+<div id="classroom-container">
+    <div id="classroom-nav">
+        <div id="classnav-title">
+            Classes
+        </div>
+        <div id="classnav-classlist"></div>
+        <div id="classnav-footer">
+            <button id="name-classroom-trigger" type="button" class="btn btn-primary btn-sm standard-button" data-bs-toggle="modal" data-bs-target="#name-classroom-modal">
+                Create Classroom
+            </button>
+
+            <button id="join-classroom-trigger" type="button" class="btn btn-primary btn-sm standard-button" data-bs-toggle="modal" data-bs-target="#name-classroom-modal">
+                Join Classroom
+            </button>
+        </div>
+    </div>
+    <div id="classroom-display-outer">
+        <div id="classroom-display-border" style="display: none;"></div>
+        <div id="classroom-display">
+            <div style="margin-top: auto; margin-bottom: auto;">
+                Select or create a class to get started.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Modal - Pick classroom name-->
+<div class="modal fade" id="name-classroom-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <input type="hidden" id="name-join-hidden-input">
+                <div id="name-classroom-label" style="margin-bottom: 5px;"></div>
+                <div>
+                    <input id="name-classroom-input">
+                </div>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button id="name-classroom-cancel" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                <button id="name-classroom-submit" type="button" class="btn btn-success"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal - edit teacher display of student name -->
+<div class="modal fade" id="edit-studentname-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+        <div class="modal-content">
+            <input type="hidden" id="hidden-classcode-input">
+            <input type="hidden" id="hidden-classid-input">
+            <input type="hidden" id="hidden-studentname-input">
+            <div class="modal-body">
+                <div style="margin-bottom: 5px;">Display Name:</div>
+                <div><small><i>Student username will remain the same.</i></small></div>
+                <div>
+                    <input id="edit-studentname-input">
+                </div>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button id="edit-studentname-cancel" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                <button id="edit-studentname-submit" type="button" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal - open lessons -->
+<div class="modal fade" id="open-lessons-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="open-lessons-grid"></div>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button id="open-lessons-cancel" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                <button id="open-lessons-submit" type="button" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal view student longtext -->
+<div class="modal fade" id="view-longtext-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="view-longtext-title"></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="view-longtext-text"></div>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button type="button" class="btn btn-primary standard-button" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ simple_classlist|json_script:"simple_classlist" }}
+
+<script src="/static/lesson/js/t_classroom_stock.js"></script>
+<script src="/static/lesson/js/t_classroom.js"></script>

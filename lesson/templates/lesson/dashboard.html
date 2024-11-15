@@ -1,0 +1,165 @@
+{% extends "lesson_base.html" %}
+{% block body %}
+
+<div id="dashboard-container">
+
+    <div id="non-solve-container" style="display: block;">
+
+        <div id="sidebar-outer-container">
+
+            <div id="sidebar-top">
+                <div class="sidebar-block">
+                    <div class="sidebar-link">
+                        <img id="sidebar-logo" src="/static/lesson/images/parsley_logo_black.png">
+                    </div>
+                </div>
+
+                <div id="sidebar-block-home" class="sidebar-block">
+                    <a href="#" id="sidebar-block-link-home" data-target="home-panel" class="sidebar-link sidebar-nav" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="sidebar-block-classroom" class="sidebar-block">
+                    <a href="#" id="sidebar-block-link-classroom" data-target="classroom-panel" class="sidebar-link sidebar-nav" data-bs-toggle="tooltip" data-bs-placement="right" title="Classroom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="sidebar-block-settings" class="sidebar-block">
+                    <a href="#" id="sidebar-block-link-settings" data-target="settings-panel" class="sidebar-link sidebar-nav" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sidebar-bottom">
+                <div id="sidebar-profile">
+        			<a id="profile-link" href="#" class="sidebar-link dropdown-toggle" data-bs-toggle="dropdown" onclick="return false;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+        				<li><a id="username-button" class="dropdown-item username-section" href="#">{{ cased_username }}</a></li>
+        				<li><a id="dropdown-collection-link" class="dropdown-item" href="/puzzle" target="_blank">Question Collection</a></li>
+                        <li><a class="dropdown-item" href="/about" target="_blank">About OpenMath.US</a></li>
+                        {% if usertype == 't' %}
+                        <li><a class="dropdown-item" id="dropdown-tour-link" href="#">Contact and Help</a></li>
+                        {% endif %}
+        				<li><hr class="dropdown-divider"></li>
+        				<li><a id="logout-button" class="dropdown-item" href="/logout">Sign Out</a></li>
+        			</ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main-dash-container">
+
+            <div id="dash-header" class="shadowed-med">
+                <div class="dash-header-div" id="dash-header-left">
+                    {{ usertype_display }}
+                </div>
+                <div class="dash-header-div ellipsis-line" id="dash-header-center">
+                    <a id="dash-image-flip" class="display-name-section" href="#">
+                        {{ display_name }}
+                    </a>
+                </div>
+                <div class="dash-header-div" id="dash-header-right">
+                    Novice
+                </div>
+            </div>
+
+            <div id="home-panel" class="dash-panel" style="display: none;">
+                {% include 'lesson/chunks/home.html' %}
+            </div>
+
+            <div id="classroom-panel" class="dash-panel" style="display: none;">
+                {% if usertype == 't' %}
+                    {% include 'lesson/chunks/t_classroom.html' %}
+                {% else %}
+                    {% include 'lesson/chunks/s_classroom.html' %}
+                {% endif %}
+            </div>
+
+            <div id="settings-panel" class="dash-panel" style="display: none;">
+                {% if usertype == 's12' %}
+                    {% include 'lesson/chunks/s12_settings.html' %}
+                {% else %}
+                    {% include 'lesson/chunks/ts13_settings.html' %}
+                {% endif %}
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="solve-container" style="display: none;">
+        {% include 'lesson/chunks/solve.html' %}
+    </div>
+
+</div>
+
+<!-- confirm action modal -->
+<button style="display: none;" id="confirm-action-trigger" data-bs-toggle="modal" data-bs-target="#confirm-action-modal"></button>
+<div class="modal fade" id="confirm-action-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+        <div class="modal-content">
+            <div id="confirm-action-message" class="modal-body"></div>
+            <div class="modal-footer modal-classroom-footer">
+                <button id="confirm-action-dismiss" type="button" class="btn btn-success" data-bs-dismiss="modal">No, Abort</button>
+                <button id="confirm-action-submit" type="button" class="btn btn-danger">Yes, I'm sure</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- welcome modal -->
+<button style="display: none;" id="welcome-modal-trigger" data-bs-toggle="modal" data-bs-target="#welcome-modal"></button>
+<div class="modal fade" id="welcome-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>Welcome to OpenMath.US!</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    Welcome to OpenMath.US, where you can find rich, engaging math content for your K12 math classroom.
+                </div>
+                <div>
+                    Within minutes, you'll be grabbing great resources and assigning content to your students.
+                </div>
+                <div>
+                    If you have any questions or feedback, email us at <strong><a class="mailto-link-dark" href="mailto:openmath.us@gmail.com">openmath.us@gmail.com</a></strong>. We promise to respond within 24 hours.
+                </div>
+                <!-- <div>
+                    To get an idea of how the site can be used, watch our introductory video.
+                    <video></video>
+                </div> -->
+                <div>
+                    To take a tour of the site, click the button below.
+                </div>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button id="start-tour-button" type="button" class="btn btn-primary standard-button" data-bs-dismiss="modal">Start Tour</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/lesson/js/set_functions.js"></script>
+<script src="/static/lesson/js/solve_connect.js"></script>
+{% if usertype == 't' %}
+<script src="/static/lesson/js/site_tours.js"></script>
+{% endif %}
+<script src="/static/lesson/js/dashboard.js"></script>
+
+{% endblock %}

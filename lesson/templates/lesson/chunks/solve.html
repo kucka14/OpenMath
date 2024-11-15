@@ -1,0 +1,184 @@
+
+<div id="solve-header" style="display: flex;">
+    <div style="display: flex; width: 200px;">
+        <div id="solve-header-left">
+            <a id="exit-solve" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div id="solve-header-middle">
+        <div title="This is the total amount of time you have spent on this lesson." data-bs-toggle="tooltip" data-bs-placement="bottom">
+            <strong>Total Work Time</strong> <span id="total-worktime-div">0:00</span>
+        </div>
+        <div title="This is the amount of time you have spent on this lesson, during the current session." data-bs-toggle="tooltip" data-bs-placement="bottom">
+            <strong>Session Work Time</strong> <span id="session-worktime-div">0:00</span>
+        </div>
+    </div>
+    <div style="display: flex; width: 200px;">
+        <div id="solve-header-right" style="margin-left: auto;">
+            <span class="ellipsis-line">
+                {{ display_name }}
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="solve-header-active" style="display: none;">
+    <div id="solve-status-bar">
+        <div id="solve-status-left"></div>
+        <div id="solve-status-center"></div>
+        <div id="solve-status-right"></div>
+    </div>
+</div>
+
+<div id="solve-body">
+
+    <div id="solve-preinstructions" style="display: none;">
+        <div>
+            <span id="preinstructions-solve-title"></span><br>
+            To begin/continue, move your cursor to the blue region at the bottom and click.<br>You will only use your keyboard when answering questions.
+        </div>
+        <div style="margin-bottom: 5px;">
+            <a href="#" onclick="return false;" data-bs-toggle="modal" data-bs-target="#sources-modal">About This Lesson</a>
+        </div>
+        <div style="font-size: 16px;">
+            <button id="solve-fullscreen-toggle" class="btn btn-outline-secondary">Go To Full Screen</button>
+        </div>
+
+    </div>
+
+    <div id="solvebox-container" style="display: none;">
+        <div id="solvebox"></div>
+        <div id="solvelatexbox" class="tex2jax_process" style="display: none;"></div>
+        <div id="solveinputbox">
+            <input type="text" spellcheck="false" id="solveinput">
+        </div>
+    </div>
+
+    <div id="solvebox-longtext" style="display: none;">
+        <div id="solvebox-longtext-text"></div>
+        <div id="solvebox-longtext-input-container">
+            <textarea id="solvebox-longtext-input"></textarea>
+        </div>
+        <div id="solvebox-longtext-submit-container">
+            <button id="longtext-submit" class="btn btn-primary standard-button"></button>
+        </div>
+    </div>
+
+</div>
+
+<div id="solve-footer">
+    <div id="solve-footer-center">Click here to begin.</div>
+</div>
+
+<!-- sources modal -->
+<div class="modal fade" id="sources-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>About This Lesson</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    This lesson was created by Andy Kuck. Material was gathered from the following places:
+                </p>
+                <p id="sources-display"></p>
+            </div>
+            <div class="modal-footer modal-classroom-footer">
+                <button type="button" class="btn btn-primary standard-button" data-bs-dismiss="modal">Dismiss</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/lesson/js/solve_base.js"></script>
+<script src="/static/lesson/js/solve_text.js"></script>
+<script src="/static/lesson/js/solve.js"></script>
+<script src="/static/lesson/js/general_solve.js"></script>
+<script src="/static/lesson/js/solve/all_base.js"></script>
+<script src="/static/lesson/js/solve/all_units.js"></script>
+<script src="/static/lesson/js/solve/all_units_canvas.js"></script>
+
+<script src="/static/lesson/js/solve/unit_a/unit_a.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bct_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bct_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/auf_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/auf_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/aut_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/aut_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/lad_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/lad_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/sut_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/sut_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/lsb_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/lsb_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bnn_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bnn_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/ann_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/ann_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/cbm_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/cbm_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/muf_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/muf_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/mut_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/mut_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/lmt_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/lmt_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bdv_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bdv_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bfr_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/bfr_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/fbr_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/fbr_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/nln_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/nln_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_a/afr_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_a/afr_sequence.js"></script>
+
+<script src="/static/lesson/js/solve/unit_l/unit_l.js"></script>
+<script src="/static/lesson/js/solve/unit_l/alv_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/alv_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/ueq_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/ueq_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/eae_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/eae_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/bal_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/bal_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/bae_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/bae_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/osa_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/osa_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/oss_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/oss_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/osm_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/osm_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/osd_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/osd_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/moa_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/moa_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/mos_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/mos_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/mom_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/mom_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/mod_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/mod_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/bte_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/bte_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/ite_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/ite_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/ate_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/ate_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/pao_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/pao_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/pat_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/pat_sequence.js"></script>
+<script src="/static/lesson/js/solve/unit_l/paw_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_l/paw_sequence.js"></script>
+
+<script src="/static/lesson/js/solve/unit_c/unit_c.js"></script>
+<script src="/static/lesson/js/solve/unit_c/trc_functions.js"></script>
+<script src="/static/lesson/js/solve/unit_c/trc_sequence.js"></script>

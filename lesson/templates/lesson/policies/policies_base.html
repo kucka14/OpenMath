@@ -1,0 +1,14 @@
+{% extends "lesson_base.html" %}
+{% block body %}
+
+<div>
+    
+    {% include 'lesson/chunks/plain_header.html' %}
+    
+    {% block content %}{% endblock %}
+    
+    {% include 'lesson/chunks/plain_footer.html' %}
+    
+</div>
+
+{% endblock %}

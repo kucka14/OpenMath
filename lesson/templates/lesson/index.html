@@ -1,0 +1,426 @@
+{% extends "lesson_base.html" %}
+{% block body %}
+
+<!-- Splash page div -->
+<div id="index-splashpage" style="display: none;">
+    <div id="index-splashpage-inner">
+        <div style="font-size: 30px; color: orange;">
+            OpenMath.US
+            <img style="padding-bottom: 5px;" src="/static/lesson/images/parsley_logo.png" height="25px">
+        </div>
+        <div style="font-size: 50px; margin-top: -10px;">Do math differently.</div>
+        <div style="font-size: 20px;">Change the way you learn and teach math.</div>
+        <div>
+            <button id="splashpage-button">Learn more and get started.</button>
+            <button id="splashpage-login">Login</button>
+        </div>
+    </div>
+</div>
+
+<div id="index-container" style="display: none;">
+
+    <div id="index-header">
+        <div id="index-header-left">
+            <a class="center-logo-click" href="#">
+                <img src="/static/lesson/images/parsley_logo.png" height="25px">
+                OpenMath.US
+            </a>
+        </div>
+        <div id="index-header-center">
+            <div class="index-header-center-hide" style="margin-right: 15px;">
+                <a class="center-logo-click" href="#" style="font-weight: bold;">
+                    Home
+                </a>
+            </div>
+            <div class="index-header-center-hide" style="margin-right: 15px;">
+                <a href="/about">
+                    About
+                </a>
+            </div>
+            <div>
+                <a href="/puzzle" target="_blank" id="index-header-center-remain">
+                    Question Collection
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="index-header-right">
+            <button id="login-open" class="btn btn-sm index-banner-buttons">Login</button>
+            <button id="signup-open" class="btn btn-sm index-banner-buttons">Sign Up</button>
+        </div>
+    </div>
+
+    <div id="index-promotion" style="display: block;">
+
+        <div id="panel-container-top" class="panel-container-light">
+            <div style="width: 40%;" class="panel-side-image">
+                <img class="panel-image" src="/static/lesson/images/promotion/chalkboard_logo.png">
+            </div>
+            <div class="panel-side-text">
+                <div class="panel-text panel-text-top">
+                    <div class="panel-title">What is OpenMath.US?</div>
+                    <div class="panel-content">
+                        <span class="panel-content-top">
+                            OpenMath.US is a completely free math education site for teachers and learners of all ages. It has a <a href="/puzzle" target="_blank">Question Collection</a> of great math questions and a series of self-guided lessons you can assign to your students.<br>
+                            <button class="btn btn-primary standard-button proxy-signup-click" style="margin-top: 10px; margin-bottom: 3px;">Create account now.</button>
+                        </span>
+                        <br style="margin-bottom: 5px;">
+                        <span class="panel-content-bottom" style="font-size: 16px;"><a href="/about">Or click here to find out what makes us different.</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-division-toblue-1"></div>
+        <div class="panel-division-toblue-2"></div>
+
+        <div id="chalkboard-panel" class="panel-container-dark">
+            {% include 'lesson/chunks/index_carousel.html' %}
+        </div>
+
+        <div class="panel-division-towhite-1"></div>
+        <div class="panel-division-towhite-2"></div>
+
+        <div style="justify-content: space-between;" class="panel-container panel-container-light">
+            <div class="mini-promotion-panel mini-p-spacer mini-p-spacer-top">
+                <div class="mini-p-panel-top alt-p-spacer-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                      <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+                    </svg>
+                </div>
+                <div class="mini-p-panel-bottom">
+                    Each self-guided student lesson provides quantitative and qualitative student progress, in an easy-to-view format.
+                </div>
+            </div>
+            <div class="mini-promotion-panel mini-p-spacer">
+                <div class="mini-p-panel-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                      <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+                    </svg>
+                </div>
+                <div class="mini-p-panel-bottom">
+                    All content is carefully curated to be pedagogically and mathematically rich. Don't waste time vetting material.
+                </div>
+            </div>
+            <div class="mini-promotion-panel mini-p-spacer-bottom">
+                <div class="mini-p-panel-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" fill="currentColor" class="bi bi-bricks" viewBox="0 0 16 16">
+                        <path d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z"/>
+                    </svg>
+                </div>
+                <div class="mini-p-panel-bottom">
+                    Each unit and lesson is carefully constructed to build upon previous lessons, starting with the fundamentals.
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-division-toblue-1"></div>
+        <div class="panel-division-toblue-2"></div>
+
+        <div class="panel-container panel-container-dark">
+            <div class="panel-side-text">
+                <div class="panel-text">
+                    <div class="panel-title">Intuitive Lessons</div>
+                    <div class="panel-content">
+                        <span class="panel-content-top-dark">Set up students to succeed with intuitive, engaging lessons.</span>
+                        <br>
+                        <span class="panel-content-bottom-dark">Each lesson contains interactive, visual puzzles that make learning fun and addictive. <a href="#" class="proxy-signup-click">Get started.</a></span>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 60%;" class="panel-side-image">
+                <img class="panel-image" src="/static/lesson/images/about/dual_solve.png">
+            </div>
+        </div>
+
+        <div class="panel-division-towhite-1"></div>
+        <div class="panel-division-towhite-2"></div>
+
+        <div class="panel-container panel-container-light">
+            <div style="width: 50%;" class="panel-side-image">
+                <img class="panel-image" src="/static/lesson/images/promotion/data.png">
+            </div>
+            <div class="panel-side-text">
+                <div class="panel-text">
+                    <div class="panel-title">Data Informed Instruction</div>
+                    <div class="panel-content">
+                        <span class="panel-content-top">Too many students fall through the cracks.</span>
+                        <span class="panel-content-bottom">Use our self-guided curriculum to track how your students are doing, knowing that they'll always have engaging work to do. <a href="#" class="proxy-signup-click">Get started.</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-division-toblue-1"></div>
+        <div class="panel-division-toblue-2"></div>
+
+        <div class="panel-container panel-container-dark">
+            <div class="panel-side-text">
+                <div class="panel-text">
+                    <div class="panel-title">Get Started Today</div>
+                    <div class="panel-content">
+                        <span class="panel-content-top-dark">What are you waiting for?</span>
+                        <span class="panel-content-bottom-dark">Explore our collection of <a href="/puzzle" target="_blank">free math resources</a>, or <a href="#" class="proxy-signup-click">create an account</a> to start assigning your students work right away.</span>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 60%;" class="panel-side-image">
+                <img class="panel-image" src="/static/lesson/images/promotion/computer.png">
+            </div>
+        </div>
+
+        <div class="panel-division-towhite-1"></div>
+        <div class="panel-division-towhite-2"></div>
+
+        <div id="panel-container-bottom" class="panel-container panel-container-light">
+            <div style="width: 50%;" class="panel-side-image">
+                <img class="panel-image" src="/static/lesson/images/promotion/mountain.png">
+            </div>
+            <div class="panel-side-text">
+                <div class="panel-text">
+                    <div class="panel-title">We Are a Community</div>
+                    <div class="panel-content">
+                        <span class="panel-content-top">This is a community endeavor. Please email us at <a href="mailto:openmath.us@gmail.com">openmath.us@gmail.com</a> with suggestions, critiques, or to find out how to get involved.</span>
+                        <span class="panel-content-bottom">Read more about us <a href="/about">here</a>.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="scroll-more-section">
+            <div id="scroll-more-indicator" style="display: flex; z-index: 2;">
+                <a href="#" id="scroll-more-indicator-scroll">
+                    <div style="display: flex; width: 200px; justify-content: center;">
+                        <div style="margin-right: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            Learn More
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="index-signlog" class="index-centerdiv" style="display: none;">
+
+        <div id="outer-signlog" class="lightbox-back">
+
+            <div style="display: none;" id="signup-content">
+                <div class="signlog-toprow">
+                    <div style="display: none;" id="signup-back">
+                        <a id="signup-backclick" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="signlog-title">
+                        Let's Go!
+                    </div>
+                </div>
+
+                <div style="display: flex;" id="signup-type">
+                    <button data-type="t" class="btn btn-primary signup-type-button standard-button">Create Teacher Account.</button>
+                    <button data-type="s13" class="btn btn-primary signup-type-button standard-button">Create Learner Account (13+)</button>
+                    <button data-type="s12" class="btn btn-primary signup-type-button standard-button">Create Learner Account (12-)</button>
+                </div>
+
+                <div style="display: none;" id="signup-signup">
+
+<!--                Teacher signup form-->
+                    <form id="signup-form-t" class="signup-form standard-form" action="" method="post" style="display: none;">
+                        {% csrf_token %}
+                        <div class="val-error-div">{{ tregister_form.non_field_errors.as_text }}</div>
+                        <div>
+                            <div>Pick a Username</div>
+                            <div>{{ tregister_form.username }}</div>
+                            <div class="val-error-div">{{ tregister_form.username.errors.as_text }}</div>
+                        </div>
+                        <div>
+                            <div>Pick a Password</div>
+                            <div>{{ tregister_form.password1 }}</div>
+                            <div class="val-error-div">{{ tregister_form.password1.errors.as_text }}</div>
+                        </div>
+                        <div>
+                            <div>Re-enter Password</div>
+                            <div>{{ tregister_form.password2 }}</div>
+                            <div class="val-error-div">{{ tregister_form.password2.errors.as_text }}</div>
+                        </div>
+                        <hr style="padding: 0; margin-bottom: 3px; margin-top: 8px;">
+                        <div>
+                            <div>
+                                <div>Enter Email</div>
+                                <div>{{ tregister_form.email }}</div>
+                                <div class="val-error-div">{{ tregister_form.email.errors.as_text }}</div>
+                            </div>
+                        </div>
+                        <div class="log-agree">
+                            <div style="margin-right: 5px;">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                            <div>
+                                I agree to the <a href="/terms_conditions" target="_blank">terms and conditions</a>.
+                            </div>
+                        </div>
+                        <div class="signlog-bottomrow">
+                            <button id="bottom-row-button" disabled class="btn btn-primary standard-button" type="submit" name="tregister_submit">Sign Up</button>
+                        </div>
+                    </form>
+
+<!--                Student13 signup form-->
+                    <form id="signup-form-s13" class="signup-form standard-form" action="" method="post" style="display: none;">
+                        {% csrf_token %}
+                        <div class="val-error-div">{{ s13register_form.non_field_errors.as_text }}</div>
+                        <div>
+                            <div>Pick a Username</div>
+                            <div>{{ s13register_form.username }}</div>
+                            <div class="val-error-div">{{ s13register_form.username.errors.as_text }}</div>
+                        </div>
+                        <div>
+                            <div>Pick a Password</div>
+                            <div>{{ s13register_form.password1 }}</div>
+                            <div class="val-error-div">{{ s13register_form.password1.errors.as_text }}</div>
+                        </div>
+                        <div>
+                            <div>Re-enter Password</div>
+                            <div>{{ s13register_form.password2 }}</div>
+                            <div class="val-error-div">{{ s13register_form.password2.errors.as_text }}</div>
+                        </div>
+                        <hr style="padding: 0; margin-bottom: 3px; margin-top: 8px;">
+                        <div>
+                            <div id="email-code-choice">
+                                Enter your email and/or a class code. <br>
+                                Leave unused fields blank.
+                            </div>
+                            <div>
+                                <div>Enter Email</div>
+                                <div>{{ s13register_form.email }}</div>
+                                <div class="val-error-div">{{ s13register_form.email.errors.as_text }}</div>
+                            </div>
+                            <div>
+                                <div>Enter Class Code</div>
+                                <div>{{ s13register_form.classcode }}</div>
+                                <div class="val-error-div">{{ s13register_form.classcode.errors.as_text }}</div>
+                            </div>
+                        </div>
+                        <div class="log-agree">
+                            <div style="margin-right: 5px;">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                            <div>
+                                I agree to the <a href="/terms_conditions" target="_blank">terms and conditions</a>.
+                            </div>
+                        </div>
+                        <div class="signlog-bottomrow">
+                            <button id="bottom-row-button" disabled class="btn btn-primary standard-button" type="submit" name="s13register_submit">Sign Up</button>
+                        </div>
+                    </form>
+
+<!--                Student12 signup form-->
+                    <form id="signup-form-s12" class="signup-form standard-form" action="" method="post" style="display: none;">
+                        {% csrf_token %}
+                        <div class="val-error-div">{{ s12register_form.non_field_errors.as_text }}</div>
+                        <div>
+                            <div>Pick a Username</div>
+                            <div>{{ s12register_form.username }}</div>
+                            <div class="val-error-div">{{ s12register_form.username.errors.as_text }}</div>
+                        </div>
+                        <hr style="padding: 0; margin-bottom: 3px; margin-top: 8px;">
+                        <div>
+                            <div>Enter Class Code</div>
+                            <div>{{ s12register_form.classcode }}</div>
+                            <div class="val-error-div">{{ s12register_form.classcode.errors.as_text }}</div>
+                        </div>
+                        <div class="log-agree">
+                            <div style="margin-right: 5px;">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                            <div>
+                                I agree to the <a href="/terms_conditions" target="_blank">terms and conditions</a>.
+                            </div>
+                        </div>
+                        <div class="signlog-bottomrow">
+                            <button id="bottom-row-button" disabled class="btn btn-primary standard-button" type="submit" name="s12register_submit">Sign Up</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div style="display: none;" id="login-content">
+
+                <div class="signlog-toprow">
+                    <div class="signlog-title">
+                        Login
+                    </div>
+                </div>
+
+                <div>
+                    <form class="standard-form" id="login-form" action='' method='post'>
+                        {% csrf_token %}
+                        <div class="val-error-div">{{ login_form.non_field_errors.as_text }}</div>
+                        <div>
+                            <div>Username</div>
+                            <div>{{ login_form.username }}</div>
+                            <div class="val-error-div">{{ login_form.username.errors.as_text }}</div>
+                        </div>
+                        <div>
+                            <div>Password</div>
+                            <div>{{ login_form.password }}</div>
+                            <div class="val-error-div">{{ login_form.password.errors.as_text }}</div>
+                        </div>
+                        <div id="password-reset">
+                            <a href="/password_reset">Forgot Username/Password?</a>
+                        </div>
+                        <div class="signlog-bottomrow">
+                            <button class="btn btn-primary signlog-submit standard-button" type="submit" name="login_submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="picture-password-link-div">
+            <a id="picture-password-link" href="#"></a>
+        </div>
+
+    </div>
+
+    <div id="picture-password" class="index-centerdiv" style="display: none; padding-bottom: 25px;">
+
+        <form id="picture-login-form" action='' method='post'>
+            {% csrf_token %}
+            {{ picture_login_form.password }}
+            <div class="val-error-div">{{ picture_login_form.non_field_errors.as_text }}</div>
+            <div class="val-error-div">{{ picture_login_form.password.errors.as_text }}</div>
+            <input type="hidden" name="picture_login_submit">
+        </form>
+
+        {% include 'lesson/chunks/picpass.html' %}
+
+    </div>
+
+</div>
+
+<section id="index-footer-container" style="display: none;">
+    {% include 'lesson/chunks/plain_footer.html' %}
+</section>
+
+<script src="/static/lesson/js/picpass.js"></script>
+<script src="/static/lesson/js/index.js"></script>
+
+{% endblock %}

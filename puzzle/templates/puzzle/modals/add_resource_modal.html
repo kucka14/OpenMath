@@ -1,0 +1,53 @@
+<div class="modal fade" id="add-resource-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-box">
+            <form id="add-form" class="standard-form" method="post">
+                <input type="hidden" name="type" value="add_resource">
+                <div class="form-item">Resource Name:<br>
+                <i><small>Try to be descriptive but concise.</i></small><br>
+                <input type="text" id="arname" name="arname" maxlength="150"></div>
+
+                <div class="form-item">Implementation Tips:<br>
+                <i><small>What would a teacher need to know to use this resource effectively?</i></small><br>
+                <textarea type="text" id="ardescription" name="ardescription"></textarea></div>
+
+                <div style="margin-left: 10px;">Math Question (Text or Image):<br>
+                <i><small>Question, puzzle, riddle...anything a math teacher might want.</i></small><br>
+                </div>
+                <div id="option-meta-div">
+                    <div>
+                        <button type="button" id="upload-option-button">Use Text</button>
+                    </div>
+                    <div>
+                        <div id="image-option-div">
+                            <div class="form-item"><strong>Question Image:</strong><br><input type="file" name="arimage" id="arimage"></div>
+                        </div>
+                        <div style="display: none;" id="question-option-div">
+                            <div class="form-item"><strong>Question Text:</strong> <textarea type="text" name="arquestion" id="arquestion"></textarea></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-item">Resource Link/Creator:<br>
+                <i><small>Make sure to credit the source, especially if it's you!</i></small><br>
+                <input type="text" name="arlink" id="arlink" maxlength="2048"></div>
+                {% if logged_in == False %}
+                <div class="form-item">Your Email (Optional):<br>
+                <i><small>In case we have questions or suggestions about the resource.</i></small><br>
+                <input type="text" name="aremail" id="aremail" maxlength="254"></div>
+                {% else %}
+                <input type="hidden" name="aremail" id="aremail" value="" maxlength="254">
+                {% endif %}
+
+            <div class="modal-line" style="width: 100%;">
+                {% if logged_in %}
+                <input type="submit" value="Add Resource" name="add_resource_submit">
+                {% else %}
+                <input type="submit" value="Submit Resource" name="add_resource_submit">
+                {% endif %}
+            </form>
+            <button id="add-resource-dismiss" type="button" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

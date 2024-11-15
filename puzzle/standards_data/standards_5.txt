@@ -1,0 +1,52 @@
+CCSS.MATH.CONTENT.5.OA.A.1
+Use parentheses, brackets, or braces in numerical expressions, and evaluate expressions with these symbols.
+CCSS.MATH.CONTENT.5.OA.A.2
+Write simple expressions that record calculations with numbers, and interpret numerical expressions without evaluating them. For example, express the calculation "add 8 and 7, then multiply by 2" as 2 × (8 + 7). Recognize that 3 × (18932 + 921) is three times as large as 18932 + 921, without having to calculate the indicated sum or product.
+CCSS.MATH.CONTENT.5.OA.B.3
+Generate two numerical patterns using two given rules. Identify apparent relationships between corresponding terms. Form ordered pairs consisting of corresponding terms from the two patterns, and graph the ordered pairs on a coordinate plane. For example, given the rule "Add 3" and the starting number 0, and given the rule "Add 6" and the starting number 0, generate terms in the resulting sequences, and observe that the terms in one sequence are twice the corresponding terms in the other sequence. Explain informally why this is so.
+CCSS.MATH.CONTENT.5.NBT.A.1
+Recognize that in a multi-digit number, a digit in one place represents 10 times as much as it represents in the place to its right and 1/10 of what it represents in the place to its left.
+CCSS.MATH.CONTENT.5.NBT.A.2
+Explain patterns in the number of zeros of the product when multiplying a number by powers of 10, and explain patterns in the placement of the decimal point when a decimal is multiplied or divided by a power of 10. Use whole-number exponents to denote powers of 10.
+CCSS.MATH.CONTENT.5.NBT.A.3
+Read, write, and compare decimals to thousandths.
+CCSS.MATH.CONTENT.5.NBT.A.4
+Use place value understanding to round decimals to any place.
+CCSS.MATH.CONTENT.5.NBT.B.5
+Fluently multiply multi-digit whole numbers using the standard algorithm.
+CCSS.MATH.CONTENT.5.NBT.B.6
+Find whole-number quotients of whole numbers with up to four-digit dividends and two-digit divisors, using strategies based on place value, the properties of operations, and/or the relationship between multiplication and division. Illustrate and explain the calculation by using equations, rectangular arrays, and/or area models.
+CCSS.MATH.CONTENT.5.NBT.B.7
+Add, subtract, multiply, and divide decimals to hundredths, using concrete models or drawings and strategies based on place value, properties of operations, and/or the relationship between addition and subtraction; relate the strategy to a written method and explain the reasoning used.
+CCSS.MATH.CONTENT.5.NF.A.1
+Add and subtract fractions with unlike denominators (including mixed numbers) by replacing given fractions with equivalent fractions in such a way as to produce an equivalent sum or difference of fractions with like denominators. For example, 2/3 + 5/4 = 8/12 + 15/12 = 23/12. (In general, a/b + c/d = (ad + bc)/bd.)
+CCSS.MATH.CONTENT.5.NF.A.2
+Solve word problems involving addition and subtraction of fractions referring to the same whole, including cases of unlike denominators, e.g., by using visual fraction models or equations to represent the problem. Use benchmark fractions and number sense of fractions to estimate mentally and assess the reasonableness of answers. For example, recognize an incorrect result 2/5 + 1/2 = 3/7, by observing that 3/7 < 1/2.
+CCSS.MATH.CONTENT.5.NF.B.3
+Interpret a fraction as division of the numerator by the denominator (a/b = a ÷ b). Solve word problems involving division of whole numbers leading to answers in the form of fractions or mixed numbers, e.g., by using visual fraction models or equations to represent the problem. For example, interpret 3/4 as the result of dividing 3 by 4, noting that 3/4 multiplied by 4 equals 3, and that when 3 wholes are shared equally among 4 people each person has a share of size 3/4. If 9 people want to share a 50-pound sack of rice equally by weight, how many pounds of rice should each person get? Between what two whole numbers does your answer lie?
+CCSS.MATH.CONTENT.5.NF.B.4
+Apply and extend previous understandings of multiplication to multiply a fraction or whole number by a fraction.
+CCSS.MATH.CONTENT.5.NF.B.5
+Interpret multiplication as scaling (resizing)
+CCSS.MATH.CONTENT.5.NF.B.6
+Solve real world problems involving multiplication of fractions and mixed numbers, e.g., by using visual fraction models or equations to represent the problem.
+CCSS.MATH.CONTENT.5.NF.B.7
+Apply and extend previous understandings of division to divide unit fractions by whole numbers and whole numbers by unit fractions.
+CCSS.MATH.CONTENT.5.MD.A.1
+Convert among different-sized standard measurement units within a given measurement system (e.g., convert 5 cm to 0.05 m), and use these conversions in solving multi-step, real world problems.
+CCSS.MATH.CONTENT.5.MD.B.2
+Make a line plot to display a data set of measurements in fractions of a unit (1/2, 1/4, 1/8). Use operations on fractions for this grade to solve problems involving information presented in line plots. For example, given different measurements of liquid in identical beakers, find the amount of liquid each beaker would contain if the total amount in all the beakers were redistributed equally.
+CCSS.MATH.CONTENT.5.MD.C.3
+Recognize volume as an attribute of solid figures and understand concepts of volume measurement.
+CCSS.MATH.CONTENT.5.MD.C.4
+Measure volumes by counting unit cubes, using cubic cm, cubic in, cubic ft, and improvised units.
+CCSS.MATH.CONTENT.5.MD.C.5
+Relate volume to the operations of multiplication and addition and solve real world and mathematical problems involving volume.
+CCSS.MATH.CONTENT.5.G.A.1
+Use a pair of perpendicular number lines, called axes, to define a coordinate system, with the intersection of the lines (the origin) arranged to coincide with the 0 on each line and a given point in the plane located by using an ordered pair of numbers, called its coordinates. Understand that the first number indicates how far to travel from the origin in the direction of one axis, and the second number indicates how far to travel in the direction of the second axis, with the convention that the names of the two axes and the coordinates correspond (e.g., x-axis and x-coordinate, y-axis and y-coordinate).
+CCSS.MATH.CONTENT.5.G.A.2
+Represent real world and mathematical problems by graphing points in the first quadrant of the coordinate plane, and interpret coordinate values of points in the context of the situation.
+CCSS.MATH.CONTENT.5.G.B.3
+Understand that attributes belonging to a category of two-dimensional figures also belong to all subcategories of that category. For example, all rectangles have four right angles and squares are rectangles, so all squares have four right angles.
+CCSS.MATH.CONTENT.5.G.B.4
+Classify two-dimensional figures in a hierarchy based on properties.

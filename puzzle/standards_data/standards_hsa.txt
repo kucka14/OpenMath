@@ -1,0 +1,54 @@
+﻿CCSS.Math.Content.HSA.SSE.A.1
+Interpret expressions that represent a quantity in terms of its context.*
+CCSS.Math.Content.HSA.SSE.A.2
+Use the structure of an expression to identify ways to rewrite it. For example, see x4 - y4 as (x2)2 - (y2)2, thus recognizing it as a difference of squares that can be factored as (x2 - y2)(x2 + y2).
+CCSS.Math.Content.HSA.SSE.B.3
+Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.*
+CCSS.Math.Content.HSA.SSE.B.4
+Derive the formula for the sum of a finite geometric series (when the common ratio is not 1), and use the formula to solve problems. For example, calculate mortgage payments.*
+CCSS.Math.Content.HSA.APR.A.1
+Understand that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication; add, subtract, and multiply polynomials.
+CCSS.Math.Content.HSA.APR.B.2
+Know and apply the Remainder Theorem: For a polynomial p(x) and a number a, the remainder on division by x - a is p(a), so p(a) = 0 if and only if (x - a) is a factor of p(x).
+CCSS.Math.Content.HSA.APR.B.3
+Identify zeros of polynomials when suitable factorizations are available, and use the zeros to construct a rough graph of the function defined by the polynomial.
+CCSS.Math.Content.HSA.APR.C.4
+Prove polynomial identities and use them to describe numerical relationships. For example, the polynomial identity (x2 + y2)2 = (x2 - y2)2 + (2xy)2 can be used to generate Pythagorean triples.
+CCSS.Math.Content.HSA.APR.C.5
+(+) Know and apply the Binomial Theorem for the expansion of (x + y)n in powers of x and y for a positive integer n, where x and y are any numbers, with coefficients determined for example by Pascal's Triangle.1
+CCSS.Math.Content.HSA.APR.D.6
+Rewrite simple rational expressions in different forms; write a(x)/b(x) in the form q(x) + r(x)/b(x), where a(x), b(x), q(x), and r(x) are polynomials with the degree of r(x) less than the degree of b(x), using inspection, long division, or, for the more complicated examples, a computer algebra system.
+CCSS.Math.Content.HSA.APR.D.7
+(+) Understand that rational expressions form a system analogous to the rational numbers, closed under addition, subtraction, multiplication, and division by a nonzero rational expression; add, subtract, multiply, and divide rational expressions.
+CCSS.Math.Content.HSA.CED.A.1
+Create equations and inequalities in one variable and use them to solve problems. Include equations arising from linear and quadratic functions, and simple rational and exponential functions.
+CCSS.Math.Content.HSA.CED.A.2
+Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales.
+CCSS.Math.Content.HSA.CED.A.3
+Represent constraints by equations or inequalities, and by systems of equations and/or inequalities, and interpret solutions as viable or nonviable options in a modeling context. For example, represent inequalities describing nutritional and cost constraints on combinations of different foods.
+CCSS.Math.Content.HSA.CED.A.4
+Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm's law V = IR to highlight resistance R.
+CCSS.Math.Content.HSA.REI.A.1
+Explain each step in solving a simple equation as following from the equality of numbers asserted at the previous step, starting from the assumption that the original equation has a solution. Construct a viable argument to justify a solution method.
+CCSS.Math.Content.HSA.REI.A.2
+Solve simple rational and radical equations in one variable, and give examples showing how extraneous solutions may arise.
+CCSS.Math.Content.HSA.REI.B.3
+Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.
+CCSS.Math.Content.HSA.REI.B.4
+Solve quadratic equations in one variable.
+CCSS.Math.Content.HSA.REI.C.5
+Prove that, given a system of two equations in two variables, replacing one equation by the sum of that equation and a multiple of the other produces a system with the same solutions.
+CCSS.Math.Content.HSA.REI.C.6
+Solve systems of linear equations exactly and approximately (e.g., with graphs), focusing on pairs of linear equations in two variables.
+CCSS.Math.Content.HSA.REI.C.7
+Solve a simple system consisting of a linear equation and a quadratic equation in two variables algebraically and graphically. For example, find the points of intersection between the line y = -3x and the circle x2 + y2 = 3.
+CCSS.Math.Content.HSA.REI.C.8
+(+) Represent a system of linear equations as a single matrix equation in a vector variable.
+CCSS.Math.Content.HSA.REI.C.9
+(+) Find the inverse of a matrix if it exists and use it to solve systems of linear equations (using technology for matrices of dimension 3 × 3 or greater).
+CCSS.Math.Content.HSA.REI.D.10
+Understand that the graph of an equation in two variables is the set of all its solutions plotted in the coordinate plane, often forming a curve (which could be a line).
+CCSS.Math.Content.HSA.REI.D.11
+Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x); find the solutions approximately, e.g., using technology to graph the functions, make tables of values, or find successive approximations. Include cases where f(x) and/or g(x) are linear, polynomial, rational, absolute value, exponential, and logarithmic functions.*
+CCSS.Math.Content.HSA.REI.D.12
+Graph the solutions to a linear inequality in two variables as a half-plane (excluding the boundary in the case of a strict inequality), and graph the solution set to a system of linear inequalities in two variables as the intersection of the corresponding half-planes.

@@ -1,0 +1,154 @@
+{% extends "lesson_base.html" %}
+{% block body %}
+
+<div id="general-container" style="background-image: url('/static/lesson/images/promotion/chalkboard_background_light.png')">
+
+    <div id="about-header">
+        <div id="index-header-left">
+            <a href="/">
+                <img src="/static/lesson/images/parsley_logo.png" height="25px">
+                OpenMath.US
+            </a>
+        </div>
+        <div id="index-header-center">
+            <div class="index-header-center-hide" style="margin-right: 15px;">
+                <a href="/">
+                    Home
+                </a>
+            </div>
+            <div class="index-header-center-hide" style="margin-right: 15px;">
+                <a href="#" style="font-weight: bold;" onclick="return false;">
+                    About
+                </a>
+            </div>
+            <div>
+                <a href="/puzzle" target="_blank" id="index-header-center-remain">
+                    Question Collection
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="index-header-right">
+            <button id="login-open-about" class="btn btn-sm index-banner-buttons">Login</button>
+            <button id="signup-open-about" class="btn btn-sm index-banner-buttons">Sign Up</button>
+        </div>
+    </div>
+
+    <div id="about-title">About OpenMath.US</div>
+    <div id="about-container">
+        <div class="about-panel">
+            <div class="about-side about-non-image">
+                <div class="about-text">
+                    <p>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Hi, my name is Andy Kuck, and I am the creator of OpenMath.US. I am a middle school math teacher. At one point or another, I have taught math at almost every level, from kindergarten to college. My mission is to make learning (and teaching) math as fun and enriching and un-tedius as it should be.
+                    </p>
+                </div>
+            </div>
+            <div class="about-side">
+                <img class="about-side-image" src="/static/lesson/images/about/headshot.jpg">
+            </div>
+        </div>
+        <div class="about-panel-long">
+            <div class="about-text" style="margin: 20px;">
+                <p>Everywhere I taught, I came across two recurring problems.</p>
+                <p><strong>Problem 1: Finding Great Math Questions.</strong> Finding great math questions was tedious. I often found myself clicking through dozens of websites to find the question or worksheet that was just right for my students. I knew there had to be a better way.</p>
+                <p><strong>Problem 2: Differentiating For Everyone.</strong> I always had students far below grade level, and students far above grade level. Despite my best efforts, I could never differentiate effectively for all my students. Too often, some students were confused, and some students were bored. I wanted to meet the needs of all my students, but I didn't know how.</p>
+            </div>
+        </div>
+        <div class="about-panel">
+            <div class="about-side">
+                <img class="about-side-image" src="/static/lesson/images/about/high_school_students.jpg">
+            </div>
+            <div class="about-side about-non-image">
+                <div class="about-text">
+                    <p>
+                        <strong>Creating OpenMath.US</strong><br>
+                        OpenMath.US has two primary features: a large question repository and a self-guided curriculum.
+                    </p>
+                    <p>
+                        <strong>The Question Collection</strong><br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Large repository of great math questions.<br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Problems added daily, for all grade levels.<br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Your one-stop shop for enriching math problems.
+                    </p>
+                    <p>
+                        <strong>The Self-Guided Curriculum</strong><br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Series of interactive lessons that starts at the very beginning.<br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Distraction-free and mathematically rich.<br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Accessible to the most struggling students, and engaging for the most advanced.<br>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        The perfect activity to supplement what you do in the classroom.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-panel-long">
+            <div class="about-dual-panel">
+                <a href="/puzzle" target="_blank">
+                    Question Collection<br>
+                    <img src="/static/lesson/images/about/repository.png">
+                </a>
+            </div>
+            <div class="about-dual-panel" id="signup-about-proxy">
+                <a href="#">
+                    Self-Guided Curriculum<br>
+                    <img src="/static/lesson/images/about/dual_solve.png">
+                </a>
+            </div>
+        </div>
+        <div class="about-panel">
+            <div class="about-side about-non-image">
+                <div class="about-text">
+                    <p>
+                        <strong>Make OpenMath.US Better</strong>
+                    </p>
+                    <p>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        I hope you check out the site, and try it in your own classroom. I wouldn’t be putting this online if I didn’t find it personally useful. However, every teacher has different needs. If you want to be involved, please email us at <a class="mailto-link-light" href="mailto:openmath.us@gmail.com">openmath.us@gmail.com</a>.<br>
+                    </p>
+                    <p>
+                        <img src="/static/lesson/images/parsley_logo.png" class="inline-logo">
+                        Give me suggestions, critiques, whatever. I want this to be a community effort. If you have a great resource on ratios you want included, I will include it. If you want the self-guided curriculum to have a lesson on negative fractions, I will create and add a lesson on negative fractions. If something doesn’t make sense, or if you would like a new feature added, just let me know.
+                    </p>
+                </div>
+            </div>
+            <div class="about-side">
+                <img class="about-side-image" src="/static/lesson/images/about/student_classroom.jpg">
+            </div>
+        </div>
+        <div class="about-panel-long">
+            <div class="about-text-alt" style="margin: 20px;">
+                <strong>Lesson Creation Guarantee:</strong> If you would like a lesson topic added to our self-guided curriculum, simply email us at <a class="mailto-link-dark" href="mailto:openmath.us@gmail.com">openmath.us@gmail.com</a>. I will add it to the site within one week so that you can start using it with your students.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% include 'lesson/chunks/plain_footer.html' %}
+
+<script>
+    document.querySelector('#login-open-about').onclick = function() {
+        sessionStorage.setItem('recentSignlog', 'login');
+        window.location.href = '/';
+    }
+    document.querySelector('#signup-open-about').onclick = function() {
+        sessionStorage.setItem('recentSignlog', 'signup');
+        window.location.href = '/';
+    }
+    document.querySelector('#signup-about-proxy').onclick = function() {
+        sessionStorage.setItem('recentSignlog', 'signup');
+        window.location.href = '/';
+    }
+</script>
+
+{% endblock %}

@@ -1,0 +1,87 @@
+<div id="general-settings-holder">
+    <div id="general-settings-container">
+
+        <div id="general-settings-title">Settings</div>
+
+        <div class="general-settings-line">
+            Username: <span class="username-section">{{ cased_username }}</span>
+        </div>
+
+        <div class="general-settings-line">
+            {% include 'lesson/chunks/ts_settings_name.html' %}
+        </div>
+
+        {% include 'lesson/chunks/ts_settings_username.html' %}
+
+        <div class="change-userpass-box">
+            <div style="font-size: 20px; margin-bottom: 10px;">
+                Change Password
+            </div>
+            <div>
+                <form id="change-password-form" method="post">
+                    {% csrf_token %}
+                    <div class="val-error-div">{{ change_password_form.non_field_errors.as_text }}</div>
+                    <div class="change-userpass-item">
+                        <div class="change-userpass-subtitle">
+                            Current Password
+                        </div>
+                        <div>
+                            {{ change_password_form.old_password }}
+                        </div>
+                        <div class="val-error-div">{{ change_password_form.old_password.errors.as_text }}</div>
+                    </div>
+                    <div class="change-userpass-item">
+                        <div class="change-userpass-subtitle">
+                            New Password <small>(at least 6 characters)</small>
+                        </div>
+                        <div>
+                            {{ change_password_form.new_password1 }}
+                        </div>
+                        <div class="val-error-div">{{ change_password_form.new_password1.errors.as_text }}</div>
+                    </div>
+                    <div class="change-userpass-item">
+                        <div class="change-userpass-subtitle">
+                            Confirm New Password
+                        </div>
+                        <div>
+                            {{ change_password_form.new_password2 }}
+                        </div>
+                        <div class="val-error-div">{{ change_password_form.new_password2.errors.as_text }}</div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Change Password">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if add_email_form != '' %}
+        <div class="change-userpass-box">
+            <div style="font-size: 20px; margin-bottom: 10px;">
+                Add Email
+            </div>
+            <div>
+                <form id="add-email-form" method="post">
+                    {% csrf_token %}
+                    <div class="val-error-div">{{ add_email_form.non_field_errors.as_text }}</div>
+                    <div class="change-userpass-item">
+                        <div class="change-userpass-subtitle">
+                            Email Address
+                        </div>
+                        <div>
+                            {{ add_email_form.email }}
+                        </div>
+                        <div class="val-error-div">{{ add_email_form.email.errors.as_text }}</div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Add Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+
+<script src="/static/lesson/js/ts13_settings.js"></script>

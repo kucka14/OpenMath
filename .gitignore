@@ -3,3 +3,5 @@ junk/*
 #massmail/uselist2.json
 help_functions/*
 massmail/*
+.env
+staticfiles/*

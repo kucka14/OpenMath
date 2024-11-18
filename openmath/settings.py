@@ -30,7 +30,6 @@ OM_IS_DEV_ENV = SECRET_KEY[0] == 'd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = OM_IS_DEV_ENV
-print(DEBUG)
 
 ALLOWED_HOSTS = ['openmath.pythonanywhere.com',
 				 '127.0.0.1',]
@@ -100,12 +99,8 @@ CHANNEL_LAYERS = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'openmathdb',
-        'USER': 'openmathdb_owner',
-        'PASSWORD': os.environ.get('OM_DATABASE_KEY'),
-        'HOST': 'ep-lively-sound-a50wtlfq.us-east-2.aws.neon.tech',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -159,13 +154,18 @@ STATICFILES_DIR = (
 	os.path.join(BASE_DIR, 'static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'omathbucket'
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

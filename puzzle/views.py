@@ -117,7 +117,7 @@ def puzzle(request):
 
     resource_count = 0
     for t in Tab.objects.filter(in_trash=False, hidden=False):
-        if t.index < 100:
+        if int(t.index) < 100:
             resource_count += t.resource_set.filter(in_trash=False, hidden=False).count()
 
     return render(request, 'puzzle/puzzle.html', {

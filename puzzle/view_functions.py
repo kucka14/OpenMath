@@ -66,16 +66,20 @@ def make_resource_list(preresources, hide_email=True):
         tag_list = [t.name for t in resource.tag_set.all()]
         tag_string = ', '.join(tag_list)
 
-        if resource.length == 1:
+        try:
+            if int(resource.length) == 1:
+                category_name = 'Quick Puzzle'
+                category_color = '#7ea0a6'
+            elif int(resource.length) == 2:
+                category_name = 'Lesson Activity'
+                category_color = '#3e737d'
+            elif int(resource.length) == 3:
+                category_name = 'Extended Challenge'
+                category_color = '#074750'
+        except:
             category_name = 'Quick Puzzle'
             category_color = '#7ea0a6'
-        elif resource.length == 2:
-            category_name = 'Lesson Activity'
-            category_color = '#3e737d'
-        elif resource.length == 3:
-            category_name = 'Extended Challenge'
-            category_color = '#074750'
-            
+
         resource_info = {
                     'id': resource.id,
                     'name': resource.name,
@@ -156,7 +160,7 @@ def load_standards_string(standards_string, resource, debug=False):
         print('Standards added')
 
 def get_lists(logged_in):
-    if logged_in:
+    if True:
         full_couplet_list = []
         tabs = Tab.objects.filter(in_trash=False, hidden=False).order_by('index')
         tablist = []
@@ -166,7 +170,7 @@ def get_lists(logged_in):
             resource_list, half_couplet_list = make_resource_list(resources)
             full_couplet_list += half_couplet_list
             tabbed_resource_list = [[tab.id,tab.index,tab.name], resource_list]
-            if tab.index >= 100:
+            if int(tab.index) >= 100:
                 personaltablist.append(tabbed_resource_list)
             else:
                 tablist.append(tabbed_resource_list)

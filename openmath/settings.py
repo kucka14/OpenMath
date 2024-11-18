@@ -26,10 +26,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('OM_SECRET_KEY')
 
-OM_IS_DEV_ENV = SECRET_KEY[0] == '9'
+OM_IS_DEV_ENV = SECRET_KEY[0] == 'd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = OM_IS_DEV_ENV
+print(DEBUG)
 
 ALLOWED_HOSTS = ['openmath.pythonanywhere.com',
 				 '127.0.0.1',]
@@ -82,8 +83,8 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'openmath.wsgi.application'
-ASGI_APPLICATION = 'openmath.asgi.application'
+WSGI_APPLICATION = 'openmath.wsgi.application'
+# ASGI_APPLICATION = 'openmath.asgi.application'
 
 CHANNEL_LAYERS = {
     'default': {
@@ -100,10 +101,10 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wteahmti',
-        'USER': 'wteahmti',
+        'NAME': 'openmathdb',
+        'USER': 'openmathdb_owner',
         'PASSWORD': os.environ.get('OM_DATABASE_KEY'),
-        'HOST': 'queenie.db.elephantsql.com',
+        'HOST': 'ep-lively-sound-a50wtlfq.us-east-2.aws.neon.tech',
         'PORT': '5432',
     }
 }

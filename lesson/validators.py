@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
-class CustomPasswordValidator():
+class CustomPasswordValidator:
 
     def __init__(self, min_length=1):
         self.min_length = min_length

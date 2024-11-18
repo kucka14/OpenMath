@@ -30,7 +30,6 @@ OM_IS_DEV_ENV = SECRET_KEY[0] == 'd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = OM_IS_DEV_ENV
-print(DEBUG)
 
 ALLOWED_HOSTS = ['openmath.pythonanywhere.com',
 				 '127.0.0.1',]
